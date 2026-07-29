@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você acorda uma manhã de sábado e percebe que seu celular está com uma notificação de um aplicativo novo que promete organizar toda a sua rotina usando Inteligência Artificial. O que você faz?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Baixa o aplicativo imediatamente e começa a testar todas as funções para ver se realmente funciona.",
+                afirmacao: "Sempre foi curioso(a) com novas tecnologias e não perde a chance de experimentar algo inovador."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Pesquisa sobre o aplicativo antes de baixar, lendo avaliações e verificando como ele lida com os seus dados pessoais.",
+                afirmacao: "É uma pessoa cuidadosa e prefere entender como as tecnologias funcionam antes de adotá-las no dia a dia."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Durante uma prova de matemática, você percebe que alguns colegas estão usando o celular escondido para resolver as questões com um aplicativo de IA. A professora ainda não percebeu. O que você faz?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Continua a prova normalmente, focando em resolver as questões com o próprio conhecimento, pois acredita que a IA não substitui o aprendizado real.",
+                afirmacao: "Acredita que o esforço pessoal é o que realmente constrói conhecimento e que depender da IA para tarefas acadêmicas pode prejudicar o próprio desenvolvimento."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Sente curiosidade sobre como o aplicativo funciona e, depois da prova, decide conhecer essa ferramenta para entender como ela resolve problemas matemáticos.",
+                afirmacao: "Tem uma visão aberta e entende que a tecnologia pode ser uma aliada no aprendizado, desde que usada com consciência e responsabilidade."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Seu professor propôs um projeto criativo: cada aluno deve criar um curta-metragem usando ferramentas digitais. Um colega sugere usar IA para gerar o roteiro inteiro. Como você participa dessa discussão?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Concorda com o colega e sugere usar a IA para gerar o roteiro, os personagens e até a trilha sonora, aproveitando ao máximo a tecnologia.",
+                afirmacao: "É entusiasta da tecnologia e enxerga na IA uma forma de amplificar a criatividade, permitindo que pessoas sem experiência técnica também produzam conteúdos de qualidade."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Propõe usar a IA apenas como apoio — para gerar ideias iniciais ou rascunhos —, mas que o roteiro final seja escrito pela equipe, com suas próprias ideias e toque pessoal.",
+                afirmacao: "Valoriza a autoria e acredita que a tecnologia deve complementar o talento humano, e não substituí-lo. Sabe que os melhores resultados surgem da combinação entre criatividade humana e ferramentas digitais."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Um vídeo gerado por IA mostrando um evento que nunca aconteceu se torna viral nas redes sociais. Muitas pessoas compartilham como se fosse real. O que você faz ao ver esse vídeo?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Analisa o vídeo com atenção, procurando sinais de manipulação, como inconsistências visuais ou lógicas, e evita compartilhar antes de confirmar a veracidade.",
+                afirmacao: "Desenvolveu uma postura crítica diante das informações na internet e entende que, em uma era de deepfakes e conteúdo gerado por IA, verificar a fonte é uma responsabilidade de todos."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Acha interessante a qualidade do vídeo e compartilha com amigos, comentando que é impressionante como a IA consegue criar conteúdos tão realistas.",
+                afirmacao: "Ficou fascinado(a) com o poder da IA de criar conteúdos convincentes e começou a acompanhar mais de perto o tema, percebendo tanto o potencial criativo quanto os riscos de desinformação."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Sua escola vai receber uma doação de computadores novos e a direção perguntou à comunidade escolar o que priorizar: investir em equipamentos para uma sala de informática tradicional ou em um laboratório de robótica com kits de Inteligência Artificial para os alunos. Qual sua opinião?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Prefere o laboratório de robótica com IA, pois acredita que preparar os alunos para o futuro significa dar acesso a tecnologias que serão cada vez mais presentes no mercado de trabalho.",
+                afirmacao: "Tem uma visão de futuro e defende que a escola deve ir além do currículo tradicional, oferecendo experiências práticas com tecnologias que moldarão as próximas décadas."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Prefere a sala de informática tradicional, pois acha importante primeiro garantir que todos os alunos dominem as ferramentas básicas antes de avançar para áreas mais complexas.",
+                afirmacao: "É uma pessoa que valoriza bases sólidas e acredita que a inclusão digital começa pelo acesso ao fundamental. Antes de correr para a IA, é preciso garantir que ninguém fique para trás no básico."
             }
         ]
     },
